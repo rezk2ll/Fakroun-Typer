@@ -14,7 +14,7 @@ void main() {
 	Fakroun("\n\n\t\t Welcome to Fakroun Typer :p \n");
 	puts("\n");
 	start : Fakroun("\t\t please provide a Filename : ");
-	gets(file);
+	fgets(file , 10 , stdin);
 	
 	if( strcmp(GetText(file),error) == 0) {
 		Fakroun(" \t\t Something is wrong with that file ! let's try again \n\n");
