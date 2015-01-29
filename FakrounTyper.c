@@ -15,7 +15,7 @@ void main() {
 	puts("\n");
 	start : Fakroun("\t\t please provide a Filename : ");
 	fgets(file , 10 , stdin);
-	
+	file[strlen(file)-1] = '\0';
 	if( strcmp(GetText(file),error) == 0) {
 		Fakroun(" \t\t Something is wrong with that file ! let's try again \n\n");
 		goto start;
