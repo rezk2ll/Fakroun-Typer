@@ -6,16 +6,17 @@
 #define error "ma7abbech"
 #define BuffSize 101
 #define border Fakroun("\t\t-----------------------------------\n\n");
+#define MAXFILE 255 //Maximum filename length
 
 char *GetText(char *fname);
 void Fakroun(char *text);
 
 int main() {
-	char *file = malloc(10);
+	char *file = malloc(MAXFILE);
 	Fakroun("\n\n\t\t Welcome to Fakroun Typer :p \n");
 	puts("\n");
 	start : Fakroun("\t\t please provide a Filename : ");
-	fgets(file , 10 , stdin);
+	fgets(file , MAXFILE, stdin);
 	file[strlen(file)-1] = '\0';
 	if(!strcmp(GetText(file),error)) {
 		Fakroun(" \t\t Something is wrong with that file ! let's try again \n\n");
