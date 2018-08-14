@@ -32,7 +32,7 @@ int main() {
 
 void Fakroun(char *text) {
 	while (*text) {
-		prutchar(*text++);
+		putchar(*text++);
 		usleep(90000);
 		fflush(stdout);
 	}
